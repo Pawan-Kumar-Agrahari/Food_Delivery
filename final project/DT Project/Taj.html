@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Restaurant</title>
+    <!-- <link rel="stylesheet" href="Taj.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="rest.css"> -->
+    <style>body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #FFF8E1;
+        color: #333;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Styling for the Back Button */
+    .back-button {
+        background-color: #FF6F00;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+        transition: background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+        background-color: #E65100;
+    }
+    
+    .banner {
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 100px 20px;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    
+    .banner h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+    
+    .banner p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .description h2,
+    .top-foods h2 {
+        color: #FF6F00;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .description p {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 800px;
+        line-height: 1.6;
+    }
+    
+    .top-foods {
+        margin-top: 30px;
+    }
+    
+    .food-item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+    .food-image {
+        flex: 1 1 300px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover; /* Ensures proper image fit */
+    }
+    
+    .food-details {
+        flex: 2 1 400px;
+        padding: 20px;
+    }
+    
+    .food-details h3 {
+        margin-top: 0;
+        color: #FF6F00;
+    }
+    
+    .food-details p {
+        margin: 5px 0;
+    }
+    
+    .food-details h4 {
+        margin: 10px 0 5px;
+        color: #E65100;
+    }
+    
+    .food-details ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+    
+    .buy-button {
+        background-color: #FF6F00;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .buy-button:hover {
+        background-color: #E65100;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #FF6F00;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .food-item {
+            flex-direction: column;
+        }
+    
+        .food-image {
+            height: 200px;
+        }
+    
+        .food-details {
+            padding: 15px;
+        }
+    
+        .banner h1 {
+            font-size: 40px;
+        }
+    
+        .banner p {
+            font-size: 16px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+     <!-- Back Button -->
+     <button class="back-button" onclick="window.history.back();">← Back</button>
+    <div class="banner" style= "background-image: url('images/taj2.webp'); ">
+        <h1>Taj Restaurant</h1>
+        <p>Flavors for Royalty</p>
+    </div>
+
+    <div class="content">
+        <section class="description">
+            <h2>About Us</h2>
+            <p>
+                Taj Restaurant is a celebration of rich Indian heritage and culinary artistry. With a perfect blend of 
+                authentic spices and modern presentation, our dishes offer a regal dining experience for all food enthusiasts.
+            </p>
+        </section>
+
+        <section class="top-foods">
+            <h2>Top Picks</h2>
+            <div class="food-item">
+                <div class="food-image" style="background-image: url('images/biryani.jpg');"></div>
+                <div class="food-details">
+                    <h3>Hyderabadi Biryani</h3>
+                    <p><strong>Price:</strong> ₹900</p>
+                    <p>
+                        A fragrant basmati rice dish cooked with tender marinated chicken, saffron, and a secret blend of spices, served with raita.
+                    </p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Basmati rice</li>
+                        <li>Marinated chicken</li>
+                        <li>Saffron</li>
+                        <li>Spices (cinnamon, cardamom, cloves)</li>
+                        <li>Yogurt</li>
+                    </ul>
+                    <h4>Recipe:</h4>
+                    <p>
+                        Layer cooked rice and marinated chicken, add saffron milk, and slow-cook to perfection. Serve hot with raita.
+                    </p>
+                    <a href="form.html"><button class="buy-button">Buy Now</button></a>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-image" style="background-image: url('images/butterchicken.jpg');"></div>
+                <div class="food-details">
+                    <h3>Butter Chicken</h3>
+                    <p><strong>Price:</strong> ₹700</p>
+                    <p>
+                        A creamy tomato-based curry cooked with succulent chicken pieces, butter, and aromatic spices, served with naan or rice.
+                    </p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Chicken</li>
+                        <li>Tomatoes</li>
+                        <li>Butter</li>
+                        <li>Cream</li>
+                        <li>Spices (garam masala, chili powder, fenugreek)</li>
+                    </ul>
+                    <h4>Recipe:</h4>
+                    <p>
+                        Cook chicken in a rich tomato gravy, add cream and butter, and simmer until flavorful. Serve with naan or steamed rice.
+                    </p>
+                    <a href="form.html"><button class="buy-button">Buy Now</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Taj Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

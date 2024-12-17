@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Classic Plate</title>
+    <link rel="stylesheet" href="ClassicPlate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="rest.css"> -->
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8E1;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling for the Back Button */
+.back-button {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #E65100;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.description h2,
+.top-foods h2 {
+    color: #FF6F00;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description p {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.top-foods {
+    margin-top: 30px;
+}
+
+.food-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.food-image {
+    flex: 1 1 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover; /* Ensures proper image fit */
+}
+
+.food-details {
+    flex: 2 1 400px;
+    padding: 20px;
+}
+
+.food-details h3 {
+    margin-top: 0;
+    color: #FF6F00;
+}
+
+.food-details p {
+    margin: 5px 0;
+}
+
+.food-details h4 {
+    margin: 10px 0 5px;
+    color: #E65100;
+}
+
+.food-details ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.buy-button {
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #E65100;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6F00;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .food-item {
+        flex-direction: column;
+    }
+
+    .food-image {
+        height: 200px;
+    }
+
+    .food-details {
+        padding: 15px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+}
+
+
+
+</style>
+</head>
+
+<body>
+     <!-- Back Button -->
+     <button class="back-button" onclick="window.history.back();">← Back</button>
+    <div class="banner" style="background-image: url('images/plateban.jpg');">
+        <h1>The Classic Plate</h1>
+        <p>Where Tradition Meets Modern Taste</p>
+    </div>
+
+    <div class="content">
+        <section class="description">
+            <h2>About Us</h2>
+            <p>
+                At The Classic Plate, we serve timeless dishes with a modern twist. Our philosophy is simple: to offer a
+                menu that respects culinary traditions while infusing creativity and innovation. Whether you're craving a
+                familiar favorite or something new, we aim to bring you an unforgettable dining experience.
+            </p>
+        </section>
+
+        <section class="top-foods">
+            <h2>Featured Dishes</h2>
+            <div class="food-item">
+                <div class="food-image" style="background-image: url('images/pizza.jpg'); object-fit: cover;"></div>
+                <div class="food-details">
+                    <h3>Margherita Pizza</h3>
+                    <p><strong>Price:</strong> ₹650</p>
+                    <p>
+                        A classic Margherita pizza with a crispy thin crust, topped with fresh mozzarella, tangy tomato
+                        sauce, and fragrant basil leaves.
+                    </p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Pizza dough</li>
+                        <li>Tomato sauce</li>
+                        <li>Fresh mozzarella</li>
+                        <li>Basil leaves</li>
+                        <li>Olive oil</li>
+                    </ul>
+                    <h4>Recipe:</h4>
+                    <p>
+                        Roll out the pizza dough, spread tomato sauce, layer with fresh mozzarella, and bake until crispy.
+                        Top with fresh basil leaves and drizzle with olive oil.
+                    </p>
+                    <a href="form.html"><button class="buy-button">Order Now</button></a>
+                </div>
+            </div>
+            <div class="food-item">
+                <div class="food-image" style="background-image: url('images/choco.jpg'); object-fit: cover;"></div>
+                <div class="food-details">
+                    <h3>Classic Chocolate Soufflé</h3>
+                    <p><strong>Price:</strong> ₹500</p>
+                    <p>
+                        A rich and decadent chocolate soufflé with a warm molten center, served with a dusting of powdered
+                        sugar and a side of vanilla ice cream.
+                    </p>
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>Dark chocolate</li>
+                        <li>Eggs</li>
+                        <li>Butter</li>
+                        <li>Sugar</li>
+                        <li>Vanilla ice cream</li>
+                    </ul>
+                    <h4>Recipe:</h4>
+                    <p>
+                        Melt the dark chocolate and mix with eggs, sugar, and butter. Bake the soufflé until set on the
+                        outside but still molten in the center. Serve with vanilla ice cream.
+                    </p>
+                    <a href="form.html"><button class="buy-button">Order Now</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Classic Plate. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

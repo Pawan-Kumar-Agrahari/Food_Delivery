@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8E1;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FF6F00;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    background-image: url('images/HD-wallpaper-anime-food-aesthetic-transformed.png');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.para {
+    font-size: 1.5rem;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.main-button {
+    background-color: #FF6F00;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.main2 h1{
+    text-align: center;
+}
+.sub{
+    text-align: center;
+}
+
+.main-button:hover {
+    background-color: #E65100;
+    transform: scale(1.05);
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.tab1 {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.tab1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tab1 h2 {
+    font-size: 24px;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.tab1 p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    background-color: #FF6F00;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-left {
+    text-align: left;
+    color: #FFFFFF;
+}
+.footer-left h3{
+
+    color: #FFFFFF;
+}
+.footer-right h4{
+
+    color: #FFFFFF;
+}
+.footer-center h4{
+
+    color: #FFFFFF;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin: 5px 0;
+}
+
+.footer-center ul li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-center ul li a:hover {
+    color: #FFE0B2;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tabs {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .main {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main img {
+        max-width: 100%;
+    }
+
+    .main-button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .tab1 {
+        height: 250px;
+    }
+}
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 60px;
+    }
+
+    .para {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .main-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .tab1 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 50px;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    .tabs {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .tab1 {
+        height: 200px;
+        padding: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex: none;
+        margin: 10px 0;
+    }
+
+    .footer-left, .footer-center, .footer-right h3, h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .para {
+        font-size: 0.9rem;
+    }
+
+    .main-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .tab1 {
+        height: 180px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="main">
+        <h1 class="heading" id="first">QuickBite</h1>
+        <div class="para">
+            <p>Discover the best restaurants in your area. From local gems to fine dining, we'll help you find your next favorite meal.</p>
+        </div>
+        <a href="#jumper"><button class="main-button">Find Restaurants</button></a>
+    </div>
+
+    <div class="main2" id="jumper">
+        <h1>Popular Restaurants Near You</h1>
+        <p class="sub">Your comprehensive restaurant discovery companion</p>
+        <div class="tabs">
+            <a href="HeritageGrill.html">
+                <div class="tab1" style="background-image: url('images/grill.jpg');">
+                    <h2>The Heritage Grill</h2>
+                    <p>Foodies welcome here</p>
+                </div>
+            </a>
+
+            <a href="Taj.html">
+                <div class="tab1" style="background-image: url('images/taj.webp');">
+                    <h2>Taj Restaurant</h2>
+                    <p>Flavours for Royalty</p>
+                </div>
+            </a>
+
+            <a href="trad.html">
+                <div class="tab1" style="background-image: url('images/trad.avif');">
+                    <h2>Traditions Table</h2>
+                    <p>Taste the Difference</p>
+                </div>
+            </a>
+
+            <a href="plate.html">
+                <div class="tab1" style="background-image: url('images/plate.avif');">
+                    <h2>The Classic Plate</h2>
+                    <p>A Pinch of Passion in every dish.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>FoodFinder</h3>
+                <p>Connecting food lovers with great restaurants since 2024.</p>
+            </div>
+
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="partner.html">Partner With Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:support@foodfinder.com">support@foodfinder.com</a></p>
+                <p>Phone: +91-1234567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 QuickBite. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

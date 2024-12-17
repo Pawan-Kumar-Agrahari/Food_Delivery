@@ -1,0 +1,33 @@
+ /* Styling for the outer div */
+.outer-div {
+    /* width: 1000; */
+    height: 100vh;
+    background-color: #ff6600; /* Outer div background color */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Horizontally center the inner div */
+    align-items: center; /* Vertically center the inner div */
+    /* margin: 50px auto; */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+  }
+  
+  /* Styling for the inner div */
+  .inner-div {
+    width: 800px;
+    height: 400px;
+    background-color: #ffffff; /* Inner div background color */
+    text-align: center; /* Align text inside the inner div */
+    line-height: 200px; /* Vertically center the text */
+    border-radius: 20px; /* Optional: Adds rounded corners */
+    box-shadow: 0 15px 120px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+  }
+  .image{display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Horizontally center the inner div */
+    align-items: center; 
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    /* background-color: black; */
+    /* background-image: url(/Screenshot\ 2024-11-17\ 225341.png); */
+
+  }
+  

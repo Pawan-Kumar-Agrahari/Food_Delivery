@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Grid</title>
+    <style>
+        .back-button {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: #FFD700;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap; /* Ensures elements wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+            gap: 20px; /* Adds spacing between items */
+            padding: 20px;
+        }
+        .video-item {
+            width: 28%; /* Adjusted to fit 3 items per row */
+            max-width: 250px; /* Restricting maximum width */
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* For hover effect */
+        }
+        .video-item:hover {
+            transform: scale(1.05); /* Zooms in when hovered */
+        }
+        video {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .dis {
+            font-size: larger;
+            margin-top: 10px;
+            font-weight: 300;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+        .Buy {
+            background-color: #306013;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .Buy:hover {
+            background-color: #25500c;
+        }
+        .hero1{
+          display: flex;
+          flex-wrap: wrap; /* Ensures elements wrap to the next line */
+            justify-content: center; /* Center items horizontally */
+            gap: 20px; /* Adds spacing between items */
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Back Button -->
+     <button class="back-button" onclick="window.history.back();">← Back</button>
+    <h1>Our Featured Dishes</h1>
+    <div class="video-container">
+        <!-- Video 1 -->  <div class="hero"></div>
+        <div class="video-item">
+            <video autoplay loop muted>
+                <source src="/images/42fd3f55c7f95e549c3ed2de94664209.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Exotic Noodle Medley</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+        <!-- Video 2 -->
+        <div class="video-item">
+            <video autoplay loop muted>
+                <source src="/images/a285246a700fcd966d05ca0beef2c06a.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Spicy Ramen Delight</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+        <!-- Video 3 -->
+        <div class="video-item">
+            <video autoplay loop muted>
+            
+              
+                <source src="/images/212d15ca44d29ca4f28993bf6bb62bc7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Classic Fried Rice</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+      </div>
+      <div class="hero1"> 
+        <!-- Video 4 -->
+        <div class="video-item">
+            <video autoplay loop muted>
+                <source src="/images/f38f49c7dd549084f2420d7290bb8834.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Vegetarian Pasta</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+        <!-- Video 5 -->
+        <div class="video-item">
+            <video autoplay loop muted>
+                <source src="/images/401e74427ee2d7102c93e927d348cfef.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Tangy Tomato Soup</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+        <!-- Video 6 -->
+        <div class="video-item">
+            <video autoplay loop muted>
+                <source src="/images/d3b4159cbb340bc51f7a361b8e3d2a31.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="dis">Sweet Dessert Platter</p>
+            <button class="Buy"><a href="#" style="color: white; text-decoration: none;">Buy</a></button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
